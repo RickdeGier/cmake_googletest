@@ -87,7 +87,7 @@
         {
             "label": "run_build",
             "type": "shell",
-            "command": "./build/bin/hello_wsl_cmake",
+            "command": "./build/bin/projectname",
             "presentation": {
                 "focus": false,
                 "showReuseMessage": false

@@ -10,5 +10,5 @@ add_library(shape_lib SHARED
 
 # add subdirectories to main
 
-# update upperlevel CMakeList source variable
+# TODO check remove update upperlevel CMakeList source variable remove
 set(SOURCES "${SOURCES}" PARENT_SCOPE)
