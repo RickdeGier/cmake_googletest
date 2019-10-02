@@ -1,21 +1,16 @@
 # Top level CMakeLists.txt
 cmake_minimum_required(VERSION 3.10)
 
+
 # project version settings
 # setup C/CXX project with version
 project(hello_wsl_cmake VERSION 1.1.0 LANGUAGES C CXX)
-
-# remove gtest and gmock warnings
-if (POLICY CMP0048)
-  cmake_policy(SET CMP0048 NEW)
-endif (POLICY CMP0048)
 
 
 # report project name that will be build
 message(STATUS "CMake for ${CMAKE_PROJECT_NAME}")
 
 # project file management
-
 # set binary and library output directories
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
@@ -50,6 +45,7 @@ target_link_libraries(${EXECUTABLE_NAME} PRIVATE animals_lib)
 # enable testing
 enable_testing()
 
+#include(GoogleTest)
 # get googletest from linux install
 add_subdirectory(/usr/src/googletest googletest)
 
@@ -64,5 +60,5 @@ add_subdirectory(tests)
 
 
 # generate multiple targets to build specific parts
-add_custom_target(tests)
-add_dependencies(tests shape_lib_test)
+#add_custom_target(tests)
+#add_dependencies(tests shape_lib_test)

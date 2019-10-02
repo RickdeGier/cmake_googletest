@@ -28,10 +28,60 @@
             ]
         },
         {
-            "name": "(gtest) Pipe Launch",
+            "name": "(gtest) all Pipe Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/debug/bin/shape_lib_test",
+            "program": "${workspaceFolder}/debug/bin/gtest_all",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "pipeTransport": {
+                "pipeCwd": "",
+                "pipeProgram": "/mnt/c/Windows/System32/bash.exe",
+                "pipeArgs": ["-c"],
+                "debuggerPath": "/usr/bin/gdb"
+            },
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "(gtest) shape Pipe Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/debug/bin/gtest_shape",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "pipeTransport": {
+                "pipeCwd": "",
+                "pipeProgram": "/mnt/c/Windows/System32/bash.exe",
+                "pipeArgs": ["-c"],
+                "debuggerPath": "/usr/bin/gdb"
+            },
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "(gtest) animals Pipe Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/debug/bin/gtest_animals",
             "args": [],
             "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
@@ -52,6 +102,5 @@
                 }
             ]
         }
-        
     ]
   }

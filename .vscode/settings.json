@@ -24,6 +24,8 @@
             }
         ]
     },
-    "gtest-adapter.debugConfig": "(gtest) Pipe Launch",
+    "gtest-adapter.debugConfig": [
+        "(gtest) shape Pipe Launch"
+    ],
     "gtest-adapter.supportLocation": false
 }
