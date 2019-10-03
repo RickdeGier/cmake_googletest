@@ -24,8 +24,15 @@
             }
         ]
     },
-    "gtest-adapter.debugConfig": [
-        "(gtest) shape Pipe Launch"
-    ],
-    "gtest-adapter.supportLocation": false
+    "gtest-adapter.debugConfig": "(gtest) all Pipe Launch",
+    "gtest-adapter.supportLocation": false,
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.view_test_and_run_all",
+            "sequence": [
+                "workbench.view.extension.test",
+                "gtestExplorer.runAll"
+            ]
+        }
+    ]
 }

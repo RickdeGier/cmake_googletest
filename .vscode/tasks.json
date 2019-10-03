@@ -85,6 +85,27 @@
             "problemMatcher": []
         },
         {
+            "label": "make_test",
+            "type": "shell",
+            "command": "make",
+            "args": [
+                "${input:componentName}",
+                "-j8"
+            ],
+            "presentation": {
+                "focus": false,
+                "showReuseMessage": false
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/debug"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
             "label": "run_build",
             "type": "shell",
             "command": "./build/bin/projectname",
