@@ -1,11 +1,10 @@
 #include <iostream>
 
-#include "hello_lib/hello.hpp"
-
 #include "shapes/shape.hpp"
 #include "shapes/rectangle.hpp"
 #include "shapes/triangle.hpp"
 #include "shapes/circle.hpp"
+
 
 int main(int argc, char** argv)
 {
@@ -30,9 +29,7 @@ int main(int argc, char** argv)
     std::cout << shape_circle->Perimeter() << std::endl;
     std::cout << shape_new_rectangle->Perimeter() << std::endl;
     
-    Hello hello = Hello(2);
-    hello.multiply(3);
-    e = hello.bar;
+    e = 2;
     f = d + e;
 
     

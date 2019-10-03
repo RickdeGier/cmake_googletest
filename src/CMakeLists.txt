@@ -7,7 +7,6 @@ list(APPEND SOURCES
 )
 
 # add subdirectories to main
-add_subdirectory(hello_lib)
 add_subdirectory(shapes)
 add_subdirectory(animals)
 
