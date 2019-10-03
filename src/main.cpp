@@ -32,9 +32,6 @@ int main(int argc, char** argv)
     e = 2;
     f = d + e;
 
-    
-
     std::cout << e << std::endl;
     std::cout << "Hello is it me you're looking for?";
-
 }

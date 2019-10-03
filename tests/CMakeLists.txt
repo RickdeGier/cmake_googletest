@@ -40,40 +40,10 @@ function(generate_test_executable
 
 endfunction()
 
+set(test_sources)
 
-# generate test executables for all libraries
-# define shape test sources
-set(shape_sources 
-    shapes_test.cpp
-)
-
-# generate googletest for shape library
-generate_test_executable(
-    EXECUTABLE_NAME gtest_shape
-    TEST_SOURCES "${shape_sources}"
-    TEST_LIBS shape_lib
-    TARGET_NAME shape
-)
-
-#define animals test sources
-set(animals_sources
-    animals_test.cpp
-)
-
-# generate googletest for animals library
-generate_test_executable(
-    EXECUTABLE_NAME gtest_animals
-    TEST_SOURCES "${animals_sources}"
-    TEST_LIBS animals_lib
-    TARGET_NAME animals
-)
-
-
-# define all test sources
-set(all_sources
-    shapes_test.cpp  
-    animals_test.cpp
-)
+add_subdirectory(animals)
+add_subdirectory(shapes)
 
 # define all libs
 set(all_libs 
@@ -84,7 +54,7 @@ set(all_libs
 # generate test executable for all libs and test sources
 generate_test_executable(
     EXECUTABLE_NAME gtest_all
-    TEST_SOURCES "${all_sources}"
+    TEST_SOURCES "${test_sources}"
     TEST_LIBS "${all_libs}"
     TARGET_NAME tests
 )
