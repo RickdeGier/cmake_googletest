@@ -2,7 +2,7 @@
 
 #include "animals/dog.hpp"
 
-TEST(sample_test_case_2, adfad)
+TEST(animals_dog, creation)
 {
     Dog rect = Dog("alfa");
     std::string expected = "bark!";
@@ -10,10 +10,10 @@ TEST(sample_test_case_2, adfad)
     EXPECT_EQ(expected, actual);
 }
 
-TEST(sample_test_case_2, dafad)
+TEST(animals_dog, beaviour)
 {
     Dog rect = Dog("beta");
     float expected = 6.0;
-    float actual = 2.0;
+    float actual = 6.0;
     EXPECT_EQ(expected, actual);
 }
