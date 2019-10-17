@@ -32,7 +32,8 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "problemMatcher": "$gcc"
         },
         {
             "label": "make_build",
@@ -49,7 +50,7 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": []
+            "problemMatcher": "$gcc"
         },
         {
             "label": "cmake_debug",
@@ -65,7 +66,8 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "problemMatcher": "$gcc"
         },
         {
             "label": "make_debug",
@@ -82,7 +84,7 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": []
+            "problemMatcher": "$gcc"
         },
         {
             "label": "make_test",
@@ -103,7 +105,7 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": []
+            "problemMatcher": "$gcc"
         },
         {
             "label": "run_build",
@@ -113,7 +115,8 @@
                 "focus": false,
                 "showReuseMessage": false
             },
-            "group": "none"
+            "group": "none",
+            "problemMatcher": "$gcc"
         },
         {
             "label": "build_&_run",
@@ -127,7 +130,7 @@
                 "showReuseMessage": false
             },
             "group": "none",
-            "problemMatcher": []
+            "problemMatcher": "$gcc"
         },
         {
             "label": "ng g",
