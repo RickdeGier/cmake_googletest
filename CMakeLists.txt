@@ -45,7 +45,6 @@ target_link_libraries(${EXECUTABLE_NAME} PRIVATE animals_lib)
 # enable testing
 enable_testing()
 
-#include(GoogleTest)
 # get googletest from linux install
 add_subdirectory(/usr/src/googletest googletest)
 
